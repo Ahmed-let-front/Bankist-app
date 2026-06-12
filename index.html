@@ -6,8 +6,8 @@
     <meta name="description" content="Bankist app" />
     <link rel="shortcut icon" type="image/png" href="/Bankist-app/icon.png" />
     <title>Bankist app</title>
-    <script type="module" crossorigin src="/Bankist-app/assets/index-BtJPPoir.js"></script>
-    <link rel="stylesheet" crossorigin href="/Bankist-app/assets/index-CSjXQyIb.css">
+    <script type="module" crossorigin src="/Bankist-app/assets/index-C6GU4Iuz.js"></script>
+    <link rel="stylesheet" crossorigin href="/Bankist-app/assets/index-0xQxnxwe.css">
   </head>
   <body>
     <!-- TOP NAVIGATION -->
@@ -19,7 +19,9 @@
         Log in to get started
       </p>
       <img src="logo.png" alt="Logo" class="logo h-16 lg:h-20" />
-      <form class="login flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
+      <form
+        class="login flex flex-col justify-center items-center sm:flex-row gap-4 w-full sm:w-auto"
+      >
         <input
           type="text"
           name="username"
@@ -38,7 +40,7 @@
           autocomplete="current-password"
         />
         <button
-          class="login__btn text-4xl cursor-pointer hover:text-input-focus transition-colors duration-300"
+          class="login__btn text-4xl cursor-pointer hover:text-input-focus transition-colors duration-300 w-fit"
         >
           &rarr;
         </button>
@@ -61,9 +63,7 @@
             As of <time class="date" datetime="2037-03-05">05/03/2037</time>
           </p>
         </div>
-        <span class="balance text-5xl"
-          ><span class="balance__value">89890</span>€</span
-        >
+        <span class="balance__value balance text-5xl">89890</span>
       </header>
       <!-- MOVEMENTS -->
       <ul
@@ -71,24 +71,22 @@
         class="divide-y-1 divide-y-reverse divide-text-muted/30 bg-bg-card rounded-4xl row-span-3 overflow-x-auto movements flex flex-col-reverse"
       >
         <li class="movements__row">
-          <div class="movements__type movements__type--deposit">2 deposit</div>
           <div class="status">
-            <span class="value"
-              ><span class="movements__value">4000</span>€</span
-            >
-            <time datetime="2037-03-02" class="movements__date"
+            <div class="movements__type movements__type--deposit">
+              2 deposit
+            </div>
+            <time datetime="2037-03-02" class="movements__date capitalize"
               >3 days ago</time
             >
           </div>
+          <span class="movements__value">4000</span>
         </li>
         <li class="movements__row">
           <div class="movements__type movements__type--withdrawal">
             1 withdrawal
           </div>
           <div class="status">
-            <span class="value"
-              ><span class="movements__value">220</span>€</span
-            >
+            <span class="movements__value">220</span>
             <time datetime="2037-01-24" class="movements__date"
               >24/01/2037</time
             >
@@ -174,24 +172,19 @@
       >
         <p class="summary__label">
           In
-          <span class="summary__value summary__value--in"
-            ><span class="value--in">520</span>€</span
-          >
+          <span class="value--in summary__value">520</span>
         </p>
         <p class="summary__label">
           Out
-          <span class="summary__value summary__value--out"
-            ><span class="value--out">8090</span>€</span
-          >
+          <span class="value--out summary__value">8090</span>
         </p>
         <p class="summary__label">
           Interest
-          <span class="summary__value summary__value--interest"
-            ><span class="value--interest">7080</span>€</span
-          >
+          <span class="value--interest summary__value">7080</span>
         </p>
         <button
           class="btn--sort sm:ml-auto flex items-center gap-3 cursor-pointer hover:text-input-focus transition-colors duration-300"
+          data-sorted="false"
         >
           <span>&downarrow;</span> <span>SORT</span>
         </button>
