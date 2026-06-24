@@ -267,7 +267,7 @@
     @apply text-blue-muted/50;
   }
   .login__btn {
-    @apply text-4xl text-blue-accent cursor-pointer  hover:text-blue-accent-light transition-colors duration-300 w-20 leading-none rounded-xl border-blue-accent border-[1px] p-2 hover:border-blue-accent/50;
+    @apply text-4xl text-blue-accent cursor-pointer grid place-items-center  hover:text-blue-accent-light transition-colors duration-300 w-20 leading-none rounded-xl border-blue-accent border-[1px] p-2 hover:border-blue-accent/50;
   }
   .app {
     @apply bg-op-content rounded-4xl p-6 xl:p-10 border border-glass-border/20 shadow-2xl shadow-black/30 leading-normal;
