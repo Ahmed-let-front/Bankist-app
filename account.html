@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Bankist app" />
+    <link rel="shortcut icon" type="image/png" href="/Bankist-app/icon.png" />
+    <title>Bankist app</title>
+    <script type="module" crossorigin src="/Bankist-app/assets/account-CtXZ4rE8.js"></script>
+    <link rel="modulepreload" crossorigin href="/Bankist-app/assets/style-moKm5u9_.js">
+    <link rel="stylesheet" crossorigin href="/Bankist-app/assets/style-DavOyvlf.css">
+  </head>
+  <body class="px-8">
+    <!-- TOP NAVIGATION -->
+    <header class="acct-header flex flex-col lg:flex-row justify-between items-center mb-8 xl:mb-25 gap-6 lg:gap-0 duration-2000 transition-transform ">
+      <h1 class="sr-only">Bankist app</h1>
+      <p class="welcome font-semibold text-3xl text-center lg:text-left">Log in to get started</p>
+      <img src="logo.png" alt="Logo" class="logo h-16 lg:h-20" />
+      <form class="login flex flex-col justify-center items-center sm:flex-row gap-4 w-full sm:w-auto">
+        <input
+          type="text"
+          name="username"
+          placeholder="user"
+          class="login__input login__input--user"
+          aria-label="user"
+          autocomplete="username"
+        />
+        <input
+          type="password"
+          name="password-login"
+          maxlength="4"
+          placeholder="PIN"
+          class="login__input login__input--pin"
+          aria-label="PIN"
+          autocomplete="current-password"
+        />
+        <button class="login__btn text-4xl cursor-pointer transition-colors duration-300">&rarr;</button>
+      </form>
+    </header>
+    <main
+      class="app relative mx-auto w-full lg:w-[80%] xl:w-9/12 flex flex-col lg:grid grid-cols-[4fr_3fr] grid-rows-[auto_repeat(3,15rem)_auto] gap-x-8 gap-y-10 mb-8 hidden-content"
+    >
+      <!-- BACK TO HOME -->
+      <button class="back-home" aria-label="Back to home page" title="Back to home page">
+        <i class="fas fa-arrow-left" aria-hidden="true"></i>
+        <span>Home</span>
+      </button>
+
+      <!-- BALANCE -->
+      <header
+        class="balance flex flex-col sm:flex-row sm:justify-between items-center col-span-2 mb-4 gap-4 sm:gap-0 w-full"
+      >
+        <div class="flex flex-col gap-2">
+          <h2 class="balance__label font-semibold text-3xl mb-0">Current balance</h2>
+          <p class="balance__date text-text-main/80 text-xl text-center sm:text-left">
+            As of <time class="date" datetime="2037-03-05">05/03/2037</time>
+          </p>
+        </div>
+        <span class="balance__value balance text-5xl">89890</span>
+      </header>
+      <!-- MOVEMENTS -->
+      <ul
+        aria-label="Transaction history"
+        class="divide-y-reverse divide-blue-muted/30 bg-blue-card rounded-4xl xl:rounded-br-none xl:rounded-tr-none row-span-3 overflow-x-auto movements flex flex-col-reverse"
+      >
+        <li class="movements__row">
+          <div class="status">
+            <div class="movements__type movements__type--deposit">2 deposit</div>
+            <time datetime="2037-03-02" class="movements__date capitalize">3 days ago</time>
+          </div>
+          <span class="movements__value">4000</span>
+        </li>
+        <li class="movements__row">
+          <div class="movements__type movements__type--withdrawal">1 withdrawal</div>
+          <div class="status">
+            <span class="movements__value">220</span>
+            <time datetime="2037-01-24" class="movements__date">24/01/2037</time>
+          </div>
+        </li>
+      </ul>
+      <!-- OPERATION: TRANSFERS -->
+      <div class="operation bg-transfer">
+        <h2>Transfer money</h2>
+        <form class="form form--transfer">
+          <div class="status">
+            <label for="transfer-to" class="form__label">Transfer to</label>
+            <input type="text" id="transfer-to" class="form__input form__input--to" name="transfer-to" />
+          </div>
+          <div class="status">
+            <label for="transfer-amount" class="form__label">Amount</label>
+            <input type="number" id="transfer-amount" class="form__input form__input--amount" name="transfer-amount" />
+          </div>
+          <button class="form__btn form__btn--transfer">&rarr;</button>
+        </form>
+      </div>
+      <!-- OPERATION: LOAN -->
+      <div class="operation bg-loan">
+        <h2>Request loan</h2>
+        <form class="form form--loan">
+          <div class="status">
+            <label for="loan-amount" class="form__label form__label--loan">Amount</label>
+            <input type="number" id="loan-amount" class="form__input form__input--loan-amount" name="input-loan" />
+          </div>
+          <button class="form__btn form__btn--loan">&rarr;</button>
+        </form>
+      </div>
+      <!-- OPERATION: CLOSE -->
+      <div class="operation bg-close">
+        <h2>Close account</h2>
+        <form class="form form--close">
+          <div class="status">
+            <label for="close-user" class="form__label">Confirm user</label>
+            <input
+              type="text"
+              id="close-user"
+              class="form__input form__input--user"
+              autocomplete="username"
+              name="close-username"
+            />
+          </div>
+          <div class="status">
+            <label for="close-pin" class="form__label">Confirm PIN</label>
+            <input
+              type="password"
+              id="close-pin"
+              maxlength="6"
+              class="form__input form__input--pin"
+              autocomplete="current-password"
+              name="close-pin"
+            />
+          </div>
+          <button class="form__btn form__btn--close">&rarr;</button>
+        </form>
+      </div>
+      <!-- SUMMARY -->
+      <div class="summary flex flex-wrap lg:flex-nowrap items-center justify-center gap-4">
+        <p class="summary__label">
+          In
+          <span class="value--in summary__value">520</span>
+        </p>
+        <p class="summary__label">
+          Out
+          <span class="value--out summary__value">8090</span>
+        </p>
+        <p class="summary__label">
+          Interest
+          <span class="value--interest summary__value">7080</span>
+        </p>
+        <button
+          class="btn--sort sm:ml-auto text-2xl flex items-center gap-3 cursor-pointer transition-colors duration-300"
+          data-sorted="false"
+        >
+          <span>&downarrow;</span> <span>SORT</span>
+        </button>
+      </div>
+      <!-- LOGOUT TIMER -->
+      <div>
+        <p class="logout-timer text-center lg:text-right">
+          You will be logged out in <span class="timer font-black">05:00</span>
+        </p>
+      </div>
+    </main>
+    <footer
+      class="text-xl rounded-4xl p-4 bg-blue-card border border-glass-border/20 w-fit drop-shadow-2xl mx-auto mt-8"
+    >
+      &copy; by Jonas Schmedtmann and UIO. Don't claim as your own :)
+    </footer>
+  </body>
+</html>
