@@ -264,7 +264,6 @@ elements.btnLogin.addEventListener('click', e => {
   if (!currentAccount) return;
   if (timeCount) clearInterval(timeCount);
   timer(300);
-  console.log(currentAccount);
   displayMainEl(currentAccount);
   displayLabelDate(elements.labelDate, currentAccount);
   displayUi(currentAccount);
