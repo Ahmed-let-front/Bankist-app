@@ -1,0 +1,23 @@
+{
+  "name": "starter",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.3.1",
+    "gh-pages": "^6.3.0",
+    "tailwindcss": "^4.3.1",
+    "vite": "^8.0.12"
+  },
+  "dependencies": {
+    "@fontsource/poppins": "^5.2.7",
+    "@fortawesome/fontawesome-free": "^7.2.0"
+  }
+}
