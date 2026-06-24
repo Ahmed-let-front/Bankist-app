@@ -3,7 +3,7 @@
 **Project by: Ahmed Yasser (UIO) — Inspired by Jonas Schmedtmann's Course**
 
 A high-performance, modern banking multi-page application (MPA) and interactive landing platform reimagined with a cutting-edge design system. It allows users to create accounts dynamically, manage financial movements, request loans, and handle operations securely.
-## [Live Demo](https://ahmed-let-front.github.io/Bankist-app/)
+## [🚀 Live Demo](https://ahmed-let-front.github.io/Bankist-app/)
 ## 📊 Application Flowchart
 
 ![Application Architecture Flowchart](./public/Bankist-flowchart.png)
