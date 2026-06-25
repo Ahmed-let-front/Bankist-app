@@ -6,7 +6,7 @@ A high-performance, modern banking multi-page application (MPA) and interactive 
 ## [🚀 Live Demo](https://ahmed-let-front.github.io/Bankist-app/)
 ## 📊 Application Flowchart
 
-![Application Architecture Flowchart](./public/Bankist-flowchart.png)
+![Application Architecture Flowchart](./public/Bankist-flowchart.webp)
 
 ## ⚡ Google Lighthouse Scores
 

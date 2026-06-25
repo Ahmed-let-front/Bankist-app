@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Bankist app" />
-    <link rel="shortcut icon" type="image/png" href="/icon.png" />
+    <link rel="shortcut icon" type="image/webp" href="/icon.webp" />
     <title>Bankist app</title>
     <script type="module" src="/src/account.js" defer></script>
   </head>
@@ -15,7 +15,7 @@
     >
       <h1 class="sr-only">Bankist app</h1>
       <p class="welcome font-semibold text-3xl text-center lg:text-left">Log in to get started</p>
-      <img src="logo.png" alt="Logo" class="logo h-16 lg:h-20" />
+      <img src="/logo.webp" alt="Logo" class="logo h-16 lg:h-20" />
       <form class="login flex flex-col justify-center items-center sm:flex-row gap-4 w-full sm:w-auto">
         <input
           type="text"
@@ -34,7 +34,7 @@
           aria-label="PIN"
           autocomplete="current-password"
         />
-        <button class="login__btn text-xl cursor-pointer transition-colors duration-300">
+        <button class="login__btn text-xl cursor-pointer transition-colors duration-300" aria-label="login button">
           <i class="fa-solid fa-right-long"></i>
         </button>
       </form>
