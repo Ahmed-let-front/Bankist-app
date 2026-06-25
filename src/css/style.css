@@ -6,14 +6,14 @@
 @font-face {
   font-family: 'Poppins';
   font-style: normal;
-  font-display: swap;
+  font-display: swap !important;
   src: local('Poppins');
 }
 @font-face {
   font-family: 'Font Awesome 6 Free';
   font-style: normal;
   font-weight: 900;
-  font-display: swap;
+  font-display: swap !important;
 }
 @theme {
   --font-sans: 'Poppins', sans-serif;
