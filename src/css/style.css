@@ -1,12 +1,13 @@
 @import 'tailwindcss';
 @import '@fontsource/poppins/index.css';
-@import '@fortawesome/fontawesome-free/css/all.min.css';
+@import '@fortawesome/fontawesome-free/css/fontawesome.css';
+@import '@fortawesome/fontawesome-free/css/solid.css';
 @variant hover (&:hover);
 @font-face {
   font-family: 'Font Awesome 6 Free';
   font-style: normal;
   font-weight: 900;
-  font-display: swap !important;
+  font-display: swap;
   src: url('@fortawesome/fontawesome-free/webfonts/fa-solid-900.woff2') format('woff2');
 }
 @theme {
