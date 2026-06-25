@@ -1,7 +1,20 @@
 @import 'tailwindcss';
 @import '@fontsource/poppins/index.css';
-@import '@fortawesome/fontawesome-free/css/all.min.css';
+@import '@fortawesome/fontawesome-free/css/fontawesome.min.css';
+@import '@fortawesome/fontawesome-free/css/solids.min.css';
 @variant hover (&:hover);
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-display: swap;
+  src: local('Poppins');
+}
+@font-face {
+  font-family: 'Font Awesome 6 Free';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+}
 @theme {
   --font-sans: 'Poppins', sans-serif;
   --color-blue-dark: #020817;
