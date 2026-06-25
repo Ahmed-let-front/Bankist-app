@@ -1,7 +1,7 @@
 @import 'tailwindcss';
 @import '@fontsource/poppins/index.css';
 @import '@fortawesome/fontawesome-free/css/fontawesome.min.css';
-@import '@fortawesome/fontawesome-free/css/solids.min.css';
+@import '@fortawesome/fontawesome-free/css/solid.min.css';
 @variant hover (&:hover);
 @font-face {
   font-family: 'Poppins';
