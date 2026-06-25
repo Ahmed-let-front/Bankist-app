@@ -8,7 +8,6 @@ const elements = {
   barBtn: document.querySelector('.bar__btn'),
   nav: document.querySelector('.nav'),
   overlay: document.querySelector('.overlay__el'),
-  navItme: document.querySelector('.nav__item'),
   operationContainerTab: document.querySelector('.operations__tab-container'),
   operations: document.querySelector('.operations'),
   header: document.querySelector('.header-nav'),
@@ -67,20 +66,6 @@ elements.operationContainerTab.addEventListener('click', function (e) {
   });
   operationCurrContent.classList.add('operations__content--active');
 });
-const processAnimateNav = e => ({
-  currTarget: e.target,
-  siblings: e.target.closest('.nav').querySelectorAll('.nav__link'),
-});
-const displayAnimateNav = function (rateOpacity, e) {
-  if (!e.target.classList.contains('nav__link')) return;
-  const { currTarget, siblings } = processAnimateNav(e);
-  siblings.forEach(el => {
-    if (el === currTarget) return;
-    el.style.opacity = rateOpacity;
-  });
-};
-elements.nav.addEventListener('mouseover', displayAnimateNav.bind(null, 0.5));
-elements.nav.addEventListener('mouseout', displayAnimateNav.bind(null, 1));
 window.addEventListener(
   'scroll',
   () => {

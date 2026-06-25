@@ -133,6 +133,15 @@
       @apply mt-12 leading-14 xl:w-300 text-4xl xl:text-6xl text-blue-text;
     }
   }
+  .nav:hover li {
+    @apply opacity-50;
+  }
+  .nav li {
+    @apply duration-300 transition-opacity;
+  }
+  .nav li:hover {
+    @apply opacity-100;
+  }
   .features {
     img {
       @apply w-full h-full object-cover rounded-3xl;
