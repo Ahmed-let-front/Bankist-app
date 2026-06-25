@@ -238,7 +238,7 @@
     }
   }
   .modal {
-    @apply fixed top-1/2 left-1/2 -translate-x-1/2 z-10 w-[80%] xl:w-[45%] bg-op-content rounded-3xl p-8 xl:p-18 border border-glass-border/20 shadow-2xl shadow-blue-accent/10;
+    @apply fixed top-1/2 left-1/2 -translate-x-1/2 z-10 w-[80%] xl:w-[45%] bg-op-content rounded-3xl p-8 px-16 xl:p-18 border border-glass-border/20 shadow-2xl shadow-blue-accent/10;
     .btn--close-modal {
       @apply absolute top-8 right-8 text-5xl text-blue-muted cursor-pointer transition-all duration-500 hover:text-blue-accent hover:rotate-90;
     }
@@ -280,7 +280,7 @@
     @apply text-blue-muted/50;
   }
   .login__btn {
-    @apply text-4xl text-blue-accent cursor-pointer grid place-items-center  hover:text-blue-accent-light transition-colors duration-300 w-20 leading-none rounded-xl border-blue-accent border-[1px] p-2 hover:border-blue-accent/50;
+    @apply  text-blue-accent cursor-pointer grid place-items-center hover:text-blue-accent-light transition-colors duration-300 w-20 leading-none rounded-xl border-blue-accent border-[1px] p-4 hover:border-blue-accent/50;
   }
   .app {
     @apply bg-op-content rounded-4xl p-6 xl:p-10 border border-glass-border/20 shadow-2xl shadow-black/30 leading-normal;
